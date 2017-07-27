@@ -1,0 +1,30 @@
+{
+  "name": "url-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandodelaconcha/url-analyzer.git"
+  },
+  "keywords": [
+    "url",
+    "analyzer"
+  ],
+  "author": "Fernando de la concha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandodelaconcha/url-analyzer/issues"
+  },
+  "homepage": "https://github.com/fernandodelaconcha/url-analyzer#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
+    "hapi": "^16.5.0",
+    "request": "^2.81.0"
+  }
+}
