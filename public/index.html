@@ -9,7 +9,7 @@
 <body>
 	<div class="container-fluid" style="margin-top:48px; text-align: center;">
 		<p style="font-size: 46px;">Introduce an URL in order to analyze it</p>
-		<p style="font-size: 16px;">Please do not forget to introduce as well http://</p>
+		<p style="font-size: 16px;">Please do not forget to introduce http://...</p>
 		<form name="url-analyzer" action="/api" method="get" enctype="multipart/form-data" class="form-horizontal">
 			<div class="form-group">
 				<input type="text" class="form-control" name="url" id="search" maxlength="50" size="30" placeholder="http://example.com">
@@ -19,6 +19,7 @@
 			</div>
 		</form>	
 	</div>
+	<div class="col-12-md text-center" id="error-span" style="color:red;"></div>
 	<table class="table table-hover">   
     <tbody>
       	<tr>

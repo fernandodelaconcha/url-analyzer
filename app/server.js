@@ -48,7 +48,7 @@ app.get('/api', function(req, res) {
 	        });
 
 	        var loginForm;
-	        
+
 	        if ($('form').attr('method') == "post"){
 	        	loginForm = 'Yes';
 	        } else {
@@ -72,10 +72,14 @@ app.get('/api', function(req, res) {
         	}
         	//sends the JSON with the filtered information as a response
         	res.json(webpage);
-		}
+		}else if(error){
+            res.json({ error: "Oops, it seems there is an error with the URL" });;
+        }
 	});
 });
 
 // viewed at http://localhost:8080
 
-app.listen(8080);
+var server = app.listen(8080,function(){
+   console.log('express server listening on port ' + server.address().port);
+    });

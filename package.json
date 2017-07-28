@@ -1,7 +1,7 @@
 {
   "name": "url-analyzer",
   "version": "1.0.0",
-  "description": "",
+  "description": "An URL analyzer which parse the given URL and returns information about its HTML code ",
   "main": "index.js",
   "scripts": {
     "start": "node app/server.js",
@@ -13,7 +13,8 @@
   },
   "keywords": [
     "url",
-    "analyzer"
+    "analyzer",
+    "cheerio"
   ],
   "author": "Fernando de la concha",
   "license": "ISC",
